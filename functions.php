@@ -78,7 +78,7 @@ function newtheme_setup() {
 	) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'newtheme_setup' );
+add_action( 'after_setup_theme', 'newtheme_setup' );	
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -123,6 +123,7 @@ function newtheme_scripts() {
     wp_enqueue_script( 'Open Sans Condensed', 'http://use.edgefonts.net/open-sans-condensed.js', false, false, false );
      wp_enqueue_script( 'Arvo', 'http://use.edgefonts.net/arvo.js', false, false, false );
     
+    wp_enqueue_style( 'sanctuary_wk5-google-fonts', 'https://fonts.googleapis.com/css?family=Arvo:400,700|Open+Sans:400,700|Open+Sans+Condensed:300' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

@@ -129,7 +129,7 @@ h1 {
 
 .site-description {
   font-family: "Open Sans Condensed";
-  font-size: 1.15em;
+  font-size: 1.8em;
   margin-top: 0;
   position: absolute;
   top: 150px;
@@ -205,7 +205,7 @@ optgroup,
 select,
 textarea {
 	color: inherit;
-	font-family: "Open Sans CondensedLight";
+	font-family: "Arvo";
 	margin: 0;
 }
 
@@ -300,7 +300,7 @@ input,
 select,
 textarea {
     color: #404040;
-	font-family: "Open Sans Condensed", sans-serif;
+	font-family: "Arvo", sans-serif;
 	font-size: 100%;
 	line-height: 1.5;
 }
@@ -593,7 +593,6 @@ a:active {
     clear: both;
     display: inline-block;
     float: right;
-    background: rgba(0, 0, 0, 0.7);
 }
 
 .main-navigation a {
@@ -617,7 +616,8 @@ a:active {
 	margin: 0;
 	display: inline;
 /*	float: left;*/
-	padding-left: 1em;
+    margin-right: -30px;
+	padding-left: 2em;
 	padding-right: 2em;
 }
 
@@ -868,17 +868,19 @@ footer {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-footer h1 {
-	font-family: merriweather, serif;
-	font-weight: 700;
-	font-size: 1em;
-	text-align: left;
-    maring-top: 1em;
-    maring-bottom: 1em;
+.social {
+    z-index: 20;
+    font-size: 3em;
+    position:fixed;
+    bottom: 0;
+    clear: both;
+    float: left;
+    display: block;
+    margin-left: 80px;
 }
 
-.site-info a {
-    z-index: 20;
+.social a {
+    padding: 5px;
 }
 
 footer p {
@@ -886,6 +888,7 @@ footer p {
     maring-top: 1em;
     maring-bottom: 1em;
     float: right;
+    margin-right: 20px;
     color: #fff;
 }
 
