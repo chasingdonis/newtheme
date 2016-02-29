@@ -14,12 +14,12 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-        <?php the_post_thumbnail(); ?>
+	  <div class="entry-content">
+       <?php the_post_thumbnail(); ?>
 		<?php the_content(); ?>
 
 		<?php wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'crazycat' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'newtheme' ),
 				'after'  => '</div>',
 			) );
 		?>
