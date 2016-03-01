@@ -16,10 +16,10 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
 			<div class="social">
-				<a class="fa fa-tumblr" href=""></a>
-				<a class="fa fa-twitter" href=""></a>
-				<a class="fa fa-pinterest" href=""></a>
-				<a class="fa fa-facebook-square" href=""></a>
+				<a href="" class="fa fa-tumblr"></a>
+				<a href="" class="fa fa-twitter"></a>
+				<a href="" class="fa fa-pinterest"></a>
+				<a href="" class="fa fa-facebook-square"></a>
 			</div>
 			<p>© copyright Sanctuary Eco-Retreat 2016</p>
 

@@ -114,11 +114,11 @@ dfn {
 
 h1 {
 	font-family: "Arvo";
-	font-size: 5em;
+	font-size: 4.6em;
 	text-align: left;
     clear: both;
     width: 300px;
-    margin-top: 20px;
+    margin-top: 55px;
     margin-left: 5px;
     z-index: 100;
 }
@@ -129,7 +129,7 @@ h1 {
 
 .site-description {
   font-family: "Open Sans Condensed";
-  font-size: 1.8em;
+  font-size: 1.3em;
   margin-top: 0;
   position: absolute;
   top: 150px;
@@ -566,16 +566,13 @@ textarea {
 --------------------------------------------------------------*/
 a {
 	color: #404040;
+    text-decoration: none;
 }
 
 a:hover,
 a:focus,
 a:active {
 	color: red;
-}
-
-a:focus {
-	outline: thin dotted;
 }
 
 a:hover,
@@ -591,8 +588,9 @@ a:active {
 	text-align: center;
 	padding: 1em;
     clear: both;
-    display: inline-block;
-    float: right;
+    display: block;
+    float: left;
+    margin-left: 300px;
 }
 
 .main-navigation a {
