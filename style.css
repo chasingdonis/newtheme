@@ -983,3 +983,6 @@ object {
 
 .home .entry-title {display: none;}
 
+.site-header a, .site-description {
+  color: #fff;
+}

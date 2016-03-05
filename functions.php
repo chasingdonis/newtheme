@@ -155,3 +155,41 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
+
+add_action( 'init', 'create_my_post_types' );
+
+function create_my_post_types() {
+ register_post_type( 'cabin', 
+ array(
+      'labels' => array(
+      	'name' => __( 'cabins' ),
+      	'singular_name' => __( 'cabin' ),
+      	'add_new' => __( 'Add New' ),
+      	'add_new_item' => __( 'Add New cabin' ),
+      	'edit' => __( 'Edit' ),
+      	'edit_item' => __( 'Edit cabin' ),
+      	'new_item' => __( 'New cabin' ),
+      	'view' => __( 'View cabin' ),
+      	'view_item' => __( 'View cabin' ),
+      	'search_items' => __( 'Search cabin' ),
+      	'not_found' => __( 'No cabin found' ),
+      	'not_found_in_trash' => __( 'No cabins found in Trash' ),
+      	'parent' => __( 'Parent cabin' ),
+      ),
+ 'public' => true,
+      'menu_position' => 4,
+      'rewrite' => array('slug' => 'cabins'),
+      'supports' => array( 'title', 'editor', 'excerpt', 'thumbnail' ),
+      'taxonomies' => array('category', 'post_tag'),
+      'publicly_queryable' => true,
+      'show_ui' => true,
+      'query_var' => true,
+      'capability_type' => 'post',
+      'hierarchical' => false,
+     )
+  );
+}
+
+wp_enqueue_script( 'jquery', false, false, false, false );
+
+wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array( 'jquery' ), false, true );

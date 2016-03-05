@@ -23,6 +23,11 @@
 				'after'  => '</div>',
 			) );
 		?>
+         <?php   $posts = get_posts(array(
+        'numberposts' => -1,
+        'category' => 5,
+      'post_type' => 'cabin',
+    ));
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
@@ -30,7 +35,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'crazycat' ),
+					esc_html__( 'Edit %s', 'newtheme' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',
