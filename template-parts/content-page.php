@@ -23,7 +23,7 @@
 				'after'  => '</div>',
 			) );
 		?>
-         <?php   $posts = get_posts(array(
+         <?php  $posts = get_posts(array(
         'numberposts' => -1,
         'category' => 5,
       'post_type' => 'cabin',

@@ -583,42 +583,73 @@ a:active {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
-
 .main-navigation {
-	text-align: center;
-	padding: 1em;
-    clear: both;
-    display: block;
-    float: left;
-    margin-left: 300px;
+  clear: both;
+  display: block;
+  float: left;
+  width: 120%;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 28px 0 28px 500px;
+  margin: -80px;
+  margin-top: -100px;
 }
-
-.main-navigation a {
-    color: #fff;
-}
-
 .main-navigation ul {
-    float: left;
-    position: absolute;
-    top: 7em;
-    left: 0;
-	width: 115%;
-    height: 80px;
-    padding: 30px;
-	margin-left: 0;
-    background: rgba(0, 0, 0, 0.7);
-    z-index: -1;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.main-navigation ul ul {
+  float: left;
+  position: absolute;
+  top: 1.5em;
+  left: -100em;
+  width: 250px;
+  margin-left: -80px;
+}
+.main-navigation ul ul ul {
+  left: -100em;
+}
+.main-navigation ul ul li {
+  width: 100%;
+  text-align: center;
+  background: #ccc;
+  padding: 0;
+}
+.main-navigation ul ul li :hover {
+  background: #fff;
+  color: red;
+}
+.main-navigation ul ul li:hover > ul, .main-navigation ul ul li.focus > ul {
+  left: 100%;
+}
+.main-navigation ul ul li a {
+  color: #000;
+  padding: 10px 0;
+}
+.main-navigation ul ul a {
+  width: 100%;
+}
+.main-navigation ul li:hover > ul,
+.main-navigation ul li.focus > ul {
+  left: auto;
+}
+.main-navigation li {
+  float: left;
+  position: relative;
+  padding: 5px 18px;
+}
+.main-navigation a {
+  display: block;
+  text-decoration: none;
+  font-family: "Arvo";
 }
 
-.main-navigation ul li {
-	margin: 0;
-	display: inline;
-/*	float: left;*/
-    margin-right: -30px;
-	padding-left: 2em;
-	padding-right: 2em;
+/* Small menu. */
+.menu-toggle,
+.main-navigation.toggled ul {
+  display: block;
 }
-
 
 /* Small menu. */
 .menu-toggle,
@@ -982,7 +1013,47 @@ object {
 }
 
 .home .entry-title {display: none;}
+.home .entry-date {display: none;}
 
 .site-header a, .site-description {
   color: #fff;
+}
+
+.cabin-gallery {
+  width: 50%;
+  height: 85%;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.post-cabin {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background: url("images/background.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.white {
+  height: 80%;
+  background: #fff;
+  margin-top: 50px;
+  padding: 10px 0;
+}
+
+.post-cabin p {
+  margin-top: 0;
+  line-height: 1.5;
+}
+
+.entry-date  {
+position: absolute;
+margin-left:-100;
 }
