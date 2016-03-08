@@ -6,19 +6,19 @@
  *
  * @package newtheme_php
  */
-?>
-<article class="cabin">
+get_header(); ?>
+<article class="post-cabin">
 	<?php 
 		$images = get_field('cabin');
 		if ($images): ?>
-			<ul class="gallery-img">
+			<ul class="img-big">
 				<?php foreach($images as $image): ?>
 					<li class="img-<?php echo $image['id']; ?>">
 						<img src="<?php echo $image['sizes']['large']; ?>" alt="<?php echo $image['alt']; ?>">
 					</li>
 				<?php endforeach; ?>
 			</ul>
-			<ul class="gallery-thumbs">
+			<ul class="img-small">
 				<?php foreach($images as $image): ?>
 					<li class="img-<?php echo $image['id']; ?>">
 						<img src="<?php echo $image['sizes']['thumbnail'] ?>" alt="<?php echo $image['alt']; ?>">
@@ -32,7 +32,7 @@
 </article>
 
 
-<article id="post-<?php the_ID(); ?>" class="cabin-info">
+<article id="post-<?php the_ID(); ?>" class="white">
 	<header class="entry-header">
 		<?php the_title( '<h1 class="cabin-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
