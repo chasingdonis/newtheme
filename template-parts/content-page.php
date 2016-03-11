@@ -23,11 +23,7 @@ get_header(); ?>
 				'after'  => '</div>',
 			) );
 		?>
-         <?php  $posts = get_posts(array(
-        'numberposts' => -1,
-        'category' => 5,
-      'post_type' => 'cabin',
-    ));
+
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">

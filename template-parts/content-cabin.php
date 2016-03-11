@@ -7,6 +7,7 @@
  * @package newtheme_php
  */
 get_header(); ?>
+
 <article class="post-cabin">
 	<?php 
 		$images = get_field('cabin');
@@ -25,8 +26,6 @@ get_header(); ?>
 					</li>
 				<?php endforeach; ?>
 			</ul>
-
-			
 		<?php endif; ?>
 	
 </article>
@@ -41,7 +40,7 @@ get_header(); ?>
 		<?php
 			the_content();
 			// wp_link_pages( array(
-			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'cabin_php' ),
+			// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'newthem_php' ),
 			// 	'after'  => '</div>',
 			// ) );
 		?>

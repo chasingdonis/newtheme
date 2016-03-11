@@ -40,7 +40,6 @@ get_header(); ?>
 			) );
 		?>
 	</div><!-- .entry-content -->
-    </article><!-- #post-## -->
 
 	<footer class="entry-footer">
 		<?php newtheme_entry_footer(); ?>

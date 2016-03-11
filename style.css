@@ -55,6 +55,7 @@ html {
 
 body {
 	margin: 0;
+    color: #000;
 }
 
 article,
@@ -448,7 +449,7 @@ table {
 }
 
 .entry-title a:hover {
-    color: orange;
+    color: #ccc;
 }
 
 /*--------------------------------------------------------------
@@ -825,8 +826,16 @@ margin-right: auto;
 }
 
 .entry-content p {
-	margin: 1em auto 1em auto;
+	margin: 0 auto 1% auto;
     width: 60%;
+    float: left;
+    padding-left: 3%;
+    font-family: "Open Sans";
+}
+
+.entry img {
+  padding-right: 5%;
+  clear: both;
 }
 
 .page-links {
@@ -1014,6 +1023,8 @@ object {
 
 .home .entry-title {display: none;}
 .home .entry-date {display: none;}
+.home .site-content {display: none;}
+.site-content .entry-title {display:none;}
 
 .site-header a, .site-description {
   color: #fff;
@@ -1023,10 +1034,10 @@ object {
   width: 50%;
   height: 100%;
   float: left;
-  padding-left: 10px;
-  padding-right: 10px;
+  margin-left: 70px;
+  margin-right: 30px;
   position: relative;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 #cabinSlider ul {
@@ -1043,52 +1054,62 @@ object {
     height: 100%;
 }
 #cabinSlider ul.img-big {
-  height: 100%;
+  height: 80%;
 }
 #cabinSlider ul.img-big li img{
   position: absolute;
-  top: 40px;
+  top: 20px;
   right: 1em;
   height: 65%;
 }
 
 #cabinSlider ul.img-small {
   position: absolute;
+  width: 100%;
   bottom: 1em;
-  right: 0;
+  right: 2%;
   height: 25%;
 }
 #cabinSlider ul.img-small li {
   display: inline;
-  height: 100%;
-  margin-left: 5px;
+  width: 100%;
+  margin-left: 2px;
 }
 #cabinSlider ul.img-small li img {
   height: 50%;
-  padding: 10px;
+  padding: 5px;
 }
 
 .post-cabin {
   padding: 0;
   margin: 0;
-  position: fixed;
+  position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0px;
+  height: 120%;
+  top: 0;
   left: 0px;
-  background: url("images/background.jpg") repeat top;
+  background-color: #fff;
+  margin-bottom: 10%;
 }
 
 .white {
-  height: 85%;
+  position: absolute;
+  margin-right: 5%;
+  left: 700px;
+  float:right;
   background: #fff;
-  margin-top: 60px;
   padding: 10px 0;
+  height: 100%;
+}
+
+.white h4 {
+ margin-left: 3%;
 }
 
 .post-cabin p {
   margin-top: 0;
   line-height: 1.5;
+  padding-top: 10px;
 }
 
 .button {
@@ -1096,13 +1117,43 @@ object {
   width: 170px;
   text-align: center;
   border-radius: 10;
-  padding: 10px; 
-  positon: absolute;
+  padding: 5px; 
+  position: absolute;
+  margin-left: 17px;
   float: left;
   color: #fff;
+  bottom: 5%;
 }
 
 .entry-date  {
 position: absolute;
 margin-left:-999;
+}
+
+.site-content {
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0px;
+  background: url("images/background.jpg") repeat top;
+  z-index:-8;
+}
+
+.content-area {
+  height: 100%;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  top: 235px;
+  padding: 10px 0;
+  margin-bottom: 100px;
+}
+
+.entry-title{
+ font-size: 1.5em;
+ padding-left: 3%;
+ font-family: "Open Sans";
 }
