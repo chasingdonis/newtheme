@@ -119,7 +119,7 @@ h1 {
 	text-align: left;
     clear: both;
     width: 300px;
-    margin-top: 60px;
+    margin-top: 65px;
     margin-left: 5px;
     z-index: 100;
 }
@@ -1082,7 +1082,7 @@ object {
 
 #cabinSlider ul.img-small li img:hover {
   position: absolute;
-  left: 230px;
+  left: 240px;
   top: -530px;
   height: 280%;
   background-color: #fff;
@@ -1130,12 +1130,20 @@ object {
   margin-left: 17px;
   float: left;
   color: #fff;
-  bottom: 10%;
+  bottom: 11%;
 }
 
 .entry-date  {
 position: absolute;
 margin-left:-999;
+}
+
+.button a {
+color: #fff;
+}
+
+.button a:hover {
+color: #ccc;
 }
 
 .site-content {
@@ -1155,7 +1163,7 @@ margin-left:-999;
   position: absolute;
   background: #fff;
   width: 100%;
-  top: 210px;
+  top: 215px;
   padding: 10px 0;
   margin-bottom: 100px;
 }
