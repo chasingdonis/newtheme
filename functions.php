@@ -120,6 +120,8 @@ function newtheme_scripts() {
 
 	wp_enqueue_script( 'newtheme-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
     
+    	wp_enqueue_script( 'newtheme-main', get_template_directory_uri() . '/js/main.js', array('jquery') );
+    
     wp_enqueue_script( 'Open Sans Condensed', 'http://use.edgefonts.net/open-sans-condensed.js', false, false, false );
      wp_enqueue_script( 'Arvo', 'http://use.edgefonts.net/arvo.js', false, false, false );
     

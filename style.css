@@ -119,7 +119,7 @@ h1 {
 	text-align: left;
     clear: both;
     width: 300px;
-    margin-top: 55px;
+    margin-top: 60px;
     margin-left: 5px;
     z-index: 100;
 }
@@ -130,10 +130,10 @@ h1 {
 
 .site-description {
   font-family: "Open Sans Condensed";
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-top: 0;
   position: absolute;
-  top: 170px;
+  top: 150px;
   left: 80px;
   color: #fff;
 }
@@ -1080,6 +1080,14 @@ object {
   padding: 5px;
 }
 
+#cabinSlider ul.img-small li img:hover {
+  position: absolute;
+  left: 230px;
+  top: -530px;
+  height: 280%;
+  background-color: #fff;
+}
+
 .post-cabin {
   padding: 0;
   margin: 0;
@@ -1122,7 +1130,7 @@ object {
   margin-left: 17px;
   float: left;
   color: #fff;
-  bottom: 5%;
+  bottom: 10%;
 }
 
 .entry-date  {
@@ -1147,7 +1155,7 @@ margin-left:-999;
   position: absolute;
   background: #fff;
   width: 100%;
-  top: 235px;
+  top: 210px;
   padding: 10px 0;
   margin-bottom: 100px;
 }
